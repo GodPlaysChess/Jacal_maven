@@ -3,6 +3,7 @@ package src.com.godplayschess.jacal;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Team {
@@ -15,6 +16,7 @@ public class Team {
     private int[] move_position = {-1, -1};
     public Color color;
     public boolean turn_is_made = false;
+    private int won = 0;
 
     LinkedList<Integer> died_pirates = new LinkedList<Integer>();
 
@@ -60,10 +62,18 @@ public class Team {
     }
 
     public void takeCoin() {
-        for (Coin O : GameData.Coins) {
-            if (O.x_on_map == findSelectedObject().x_on_map && O.y_on_map == findSelectedObject().y_on_map && O.fields_left == findSelectedObject().fields_left) {
-                O.takeOrPut();
-                break;
+        if (findSelectedObject() instanceof Pirate && ((Pirate) findSelectedObject()).isOn_plane()) {
+            for (Coin O : GameData.Coins) {
+                if (O.x_on_map == findSelectedObject().x_on_map && O.y_on_map == findSelectedObject().y_on_map && O.fields_left == findSelectedObject().fields_left) {
+                    O.takeOrPut();
+                }
+            }
+        } else {
+            for (Coin O : GameData.Coins) {
+                if (O.x_on_map == findSelectedObject().x_on_map && O.y_on_map == findSelectedObject().y_on_map && O.fields_left == findSelectedObject().fields_left) {
+                    O.takeOrPut();
+                    break;
+                }
             }
         }
     }
@@ -78,7 +88,6 @@ public class Team {
                 O.render(g);
             TeamObjects.get(findSelected()).render(g);
         }
-
 
 
     }
@@ -115,6 +124,13 @@ public class Team {
                     ((Pirate) O).sober();
             }
         }
+
+        for (Iterator<Coin> C = GameData.Coins.iterator(); C.hasNext(); ) {
+            if (C.next().isTo_be_removed())
+                C.remove();
+        }
+
+        checkWinningConditions();
     }
 
     private boolean isMoved() {
@@ -152,10 +168,6 @@ public class Team {
         return score;
     }
 
-    public int getMove_direction() {
-        return move_direction;
-    }
-
     public void activateEvent() {
         if (findSelectedObject().getTile() == Tile.FORT_GIRL && TeamObjects.size() < 4) {
             ressurect();
@@ -180,5 +192,16 @@ public class Team {
     public void setMovePosition(int mouseX, int mouseY) {
         move_position[0] = mouseX;
         move_position[1] = mouseY;
+    }
+
+    private void checkWinningConditions() {
+        if (score > 18)
+            won = 1;
+        if (TeamObjects.size() == 0)
+            won = -1;
+    }
+
+    public int isWon() {
+        return won;
     }
 }

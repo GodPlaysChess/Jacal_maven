@@ -10,6 +10,11 @@ public class Pirate extends MovingObject {
     private int is_drunk = 0;
     private int team = -1;
     private int number; //1, 2 or 3. The same as position in the array
+
+    public boolean isOn_plane() {
+        return on_plane;
+    }
+
     private boolean on_plane = false;
 
 
@@ -75,74 +80,11 @@ public class Pirate extends MovingObject {
         for (Coin O : GameData.Coins) {
             if (prev_x_on_map == O.x_on_map && prev_y_on_map == O.y_on_map && O.checkTaken()) {
                 O.update(targetX, targetY);
-                break; //just to be sure that only one coins will be taken;
             }
         }
+
+        on_plane = false;
     }
-/*
-    protected boolean movementAllowed(int direction_pad) {
-        int newx = getNewPosition(direction_pad)[0];
-        int newy = getNewPosition(direction_pad)[1];
-        return movementAllowed(newx, newy);
-
-    }*/
-
-/*    protected boolean movementAllowed(int newx, int newy) {
-        for (int[] aF : getAllowedFields()) {
-            if (newx == aF[0] && newy == aF[1])
-                return true;
-        }
-        return false;*/
-    /*
-
-
-        int dir = getMyTeam().getMove_direction();
-        //out of map check
-        if (newx < 0 || newx > src.com.godplayschess.jacal.Map.NFIELDS - 1 || newy < 0 || newy > src.com.godplayschess.jacal.Map.NFIELDS - 1) {
-            return false;
-        }
-
-        if (getTile() != src.com.godplayschess.jacal.Tile.HORSE) {
-            if (Math.abs(newx - x_on_map) > 1 || (Math.abs(newy - y_on_map) > 1))
-                return false;
-        }
-
-        if (getTile() == src.com.godplayschess.jacal.Tile.HORSE) {
-            if (Math.abs(newx - x_on_map) == 2 && (Math.abs(newy - y_on_map) == 1) || Math.abs(newx - x_on_map) == 1 && (Math.abs(newy - y_on_map) == 2))
-                return true;
-        }
-
-        //there's only one way out of the water
-        if (!onBoat() && getTile() == src.com.godplayschess.jacal.Tile.WATER && src.com.godplayschess.jacal.GameData.map.getTileType(newx, newy) != src.com.godplayschess.jacal.Tile.WATER)
-            return false;
-
-        //there's only one way out of the boat
-        if (onBoat() && src.com.godplayschess.jacal.GameData.map.getTileType(newx, newy) != src.com.godplayschess.jacal.Tile.WATER && getMyTeam().getMove_direction() != 8 && getMyTeam().getMove_direction() != 2)
-            return false;
-
-
-        //common conditions
-        if (is_trapped || is_drunk != 0)
-            return false;
-
-        //arrows
-        if (getObjTile() instanceof src.com.godplayschess.jacal.Arrow) {
-            for (int allowed_direction : ((src.com.godplayschess.jacal.Arrow) getObjTile()).AllowedDirections) {
-                if (dir == allowed_direction)
-                    return true;
-            }                                                                                           //MAY BE BAD CAUSE RETURNS WITHOUT CHECKING OTHER CONDITIONS
-            return false;
-        }
-
-        if (getTile() == src.com.godplayschess.jacal.Tile.ICE_2X) {
-            if ((newx + prev_x_on_map) != 2 * x_on_map || (newy + prev_y_on_map) != 2 * y_on_map) {
-                return false;
-            }
-        }
-
-        return true;*/
-
-    // }
 
     public boolean changePlane() {
         return on_plane = !on_plane;
@@ -155,9 +97,7 @@ public class Pirate extends MovingObject {
 
 
     private boolean onBoat() {
-        if (x_on_map == getMyTeam().TeamObjects.get(0).x_on_map && y_on_map == getMyTeam().TeamObjects.get(0).y_on_map)
-            return true;
-        else return false;
+        return  (x_on_map == getMyTeam().TeamObjects.get(0).x_on_map && y_on_map == getMyTeam().TeamObjects.get(0).y_on_map);
     }
 
 
@@ -190,7 +130,7 @@ public class Pirate extends MovingObject {
     }
 
     private void checkLandEvent() {
-        System.out.println("event checked, TILE:" + getTile());
+
         switch (GameData.map.getTileType(x_on_map, y_on_map)) {
             case (Tile.UNKNOWN):
                 GameData.map.openTile(x_on_map, y_on_map);
@@ -296,7 +236,6 @@ public class Pirate extends MovingObject {
     }
 
     private void onTheArrow() {
-        System.out.println("I am on the arrow");
         is_moved = false;
         for (MovingObject O : getMyTeam().TeamObjects) {
             if (O != this) {
@@ -399,10 +338,11 @@ public class Pirate extends MovingObject {
             }
 
         }
-        for (int[] aF : allowedFields) {
+
+        /*for (int[] aF : allowedFields) {
             if (aF[0] < 0 || aF[0] >= Map.NFIELDS || aF[1] < 0 || aF[1] >= Map.NFIELDS)
                 allowedFields.remove(aF);
-        }
+        }*/
 
         return allowedFields;
     }
@@ -465,9 +405,9 @@ public class Pirate extends MovingObject {
             g.fillRect(x + 9 * c + 1 - number * 5, y + c + 1, pwsize - 2, pwsize * 2 - 2);
         }
         if (fields_left < 3) {
-            g.fillRect(x + 9 * c - number * 5 - (2-fields_left)*3*c, y + 7*c, pwsize, pwsize * 2);
+            g.fillRect(x + 9 * c - number * 5 - (2 - fields_left) * 3 * c, y + 7 * c, pwsize, pwsize * 2);
             g.setColor(getMyTeam().color);
-            g.fillRect(x + 9 * c + 1 - number * 5 -(2-fields_left)*3*c, y + 7*c + 1, pwsize - 2, pwsize * 2 - 2);
+            g.fillRect(x + 9 * c + 1 - number * 5 - (2 - fields_left) * 3 * c, y + 7 * c + 1, pwsize - 2, pwsize * 2 - 2);
         }
         g.setColor(getMyTeam().color);
     }

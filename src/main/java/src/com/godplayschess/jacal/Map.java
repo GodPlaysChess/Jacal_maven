@@ -23,7 +23,7 @@ public class Map {
     private final int FORTS_GIRL_AMOUNT = 10;
     private final int HOLES_AMOUNT = 10;
     private final int PLANES_AMOUNT = 10;
-    private final int HORSES_AMOUNT = 1000;
+    private final int HORSES_AMOUNT = 10;
 
     private final int ARROW1_AMOUNT = 10;
     private final int ARROW2_AMOUNT = 10;
@@ -170,9 +170,6 @@ public class Map {
         //   renderGrid(g);
     }
 
-    private void renderGrid(Graphics2D g) {
-
-    }
 
 
     private void renderTiles(Graphics2D g) {

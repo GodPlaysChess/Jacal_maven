@@ -67,12 +67,6 @@ public class Boat extends MovingObject {
             g.drawRect(Map.getXCoordinate(aF[0]) + 2, Map.getYCoordinate(aF[1]) + 2, Map.FIELD_SIZE - 5, Map.FIELD_SIZE - 5);
         }
     }
-/*    protected boolean movementAllowed(int direction_pad) {
-
-        int newx = getNewPosition(direction_pad)[0];
-        int newy = getNewPosition(direction_pad)[1];
-        return movementAllowed(newx, newy);
-    }*/
 
     protected void movementSecondaryActions(int targetX, int targetY) {
         //move all pirates within
@@ -80,16 +74,16 @@ public class Boat extends MovingObject {
             if (this.prev_x_on_map == getMyTeam().TeamObjects.get(i).x_on_map && this.y_on_map == getMyTeam().TeamObjects.get(i).y_on_map)
                 getMyTeam().TeamObjects.get(i).move(this.x_on_map, this.y_on_map);
         }
+        //and all coins stay forever on the ship
+
+        for (Coin O : GameData.Coins) {
+            if (prev_x_on_map == O.x_on_map && prev_y_on_map == O.y_on_map)
+                O.push(x_on_map, y_on_map);
+        }
+
 
     }
 
-/*    protected boolean movementAllowed(int targetX, int targetY) {
-*//*        for (int[] aF : getAllowedFields()) {
-            if (targetX == aF[0] && targetY == aF[1])
-                return true;
-        }
-        return false;
-    }*/
 
     public void movementSecondaryActions(int direction_pad) {
         for (int i = 1; i < getMyTeam().TeamObjects.size(); i++) {

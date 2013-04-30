@@ -1,11 +1,11 @@
 package src.com.godplayschess.jacal;
 
-import java.awt.*;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.image.BufferStrategy;
+
 
 public class Game implements KeyListener, MouseListener {
     boolean game_on;
@@ -26,13 +26,13 @@ public class Game implements KeyListener, MouseListener {
     }
 
     public Team getCurrentTeam() {
-        assert (current_team == 1 || current_team == 2);
+
         if (current_team == 1)
             return GameData.Team1;
-        if (current_team == 2)
+        else
             return GameData.Team2;
 
-        return null;
+
     }
 
     public void start() {
@@ -48,6 +48,7 @@ public class Game implements KeyListener, MouseListener {
         if (getCurrentTeam().turn_is_made) {
             getCurrentTeam().turn_is_made = false;
             nextTour();
+
         }
     }
 
@@ -55,11 +56,6 @@ public class Game implements KeyListener, MouseListener {
         GameData.nextTurn();
         current_team = GameData.getTours_made() % 2 + 1;
     }
-
-    private void handleEvents() {
-
-    }
-
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -82,6 +78,11 @@ public class Game implements KeyListener, MouseListener {
             case KeyEvent.VK_R:
                 if (getCurrentTeam().findSelected() != -1) {
                     getCurrentTeam().activateEvent();
+                }
+                break;
+            case KeyEvent.VK_K:
+                if (getCurrentTeam().findSelected() > 0) {
+                    getCurrentTeam().dies();
                 }
                 break;
 
