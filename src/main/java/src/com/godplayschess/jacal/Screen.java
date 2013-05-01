@@ -78,8 +78,12 @@ public class Screen extends JFrame {
     private void renderControls(Graphics2D g) {
         g.drawString("Numpad or mouse to move", 900, 650);
         g.drawString("Tab to choose pirate", 900, 680);
-        g.drawString("<T>ake a coin",  900, 710);
-        g.drawString("<K>ill a pirate if necessary",  900, 740);
+        g.drawString("<T>ake a coin", 900, 710);
+        g.drawString("<K>ill a pirate if necessary", 900, 740);
+
+        g.setFont(new Font("Arial", Font.ROMAN_BASELINE, 11));
+        g.drawString("developed by G. Parakhonskiy", 1120, 850);
+
     }
 
     private void renderWin(Graphics2D g) {

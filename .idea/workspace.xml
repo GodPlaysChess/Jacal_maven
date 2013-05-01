@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f5d33a-a79c-466a-abd0-e1581ce66ba5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/TextFormatter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Boat.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Boat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Game.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Pirate.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Pirate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Team.java" afterPath="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Team.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jacal_maven.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,12 +12,12 @@
     <file path="/Tile.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367153019822" ignored="false" />
     <file path="/Map.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367152204702" ignored="false" />
     <file path="/pom.xml" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367153187141" ignored="false" />
-    <file path="/Dummy.txt" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355826298" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355886152" ignored="false" />
     <file path="/Coin.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355863064" ignored="false" />
     <file path="/Team.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367354914703" ignored="false" />
     <file path="/Pirate.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355788025" ignored="false" />
     <file path="/Boat.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367175353559" ignored="false" />
-    <file path="/Screen.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355278779" ignored="false" />
+    <file path="/Screen.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367356303709" ignored="false" />
     <file path="/TextReader.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367262609619" ignored="false" />
     <file path="/TextFormatter.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367271144383" ignored="false" />
     <file path="/Game.java" changelist="51f5d33a-a79c-466a-abd0-e1581ce66ba5" time="1367355669809" ignored="false" />
@@ -128,7 +122,7 @@
       <file leaf-file-name="Screen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="10" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0">
+            <state line="84" column="56" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="method#renderHelp#0;class#Screen#0" expanded="false" />
                 <element signature="method#tileMouseOn#0;class#Screen#0" expanded="false" />
@@ -158,10 +152,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coin.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Coin.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="8" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.39716312">
+            <state line="184" column="8" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,10 +170,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Map.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="0" selection-start="5482" selection-end="5482" vertical-scroll-proportion="0.0">
+            <state line="45" column="39" selection-start="1416" selection-end="1416" vertical-scroll-proportion="-0.7383016">
               <folding />
             </state>
           </provider>
@@ -206,14 +200,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/TextReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Boat.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/TextFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Pirate.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java" />
         <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java" />
       </list>
     </option>
   </component>
@@ -562,7 +556,11 @@
       <created>1367156486822</created>
       <updated>1367156486822</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2.0 Duel mode is ON">
+      <created>1367355892820</created>
+      <updated>1367355892820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -578,13 +576,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67074525" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -700,22 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/GameData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="8" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
@@ -732,14 +714,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="10" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0">
+        <state line="169" column="0" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#renderHelp#0;class#Screen#0" expanded="false" />
-            <element signature="method#tileMouseOn#0;class#Screen#0" expanded="false" />
-            <element signature="method#renderCoins#0;class#Screen#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="8" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,25 +737,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Team.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="0" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
+        <state line="102" column="8" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/GameData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="5482" selection-end="5482" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Coin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="8" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.39716312">
+        <state line="84" column="56" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#renderHelp#0;class#Screen#0" expanded="false" />
+            <element signature="method#tileMouseOn#0;class#Screen#0" expanded="false" />
+            <element signature="method#renderCoins#0;class#Screen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/com/godplayschess/jacal/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="39" selection-start="1416" selection-end="1416" vertical-scroll-proportion="-0.7383016">
           <folding />
         </state>
       </provider>

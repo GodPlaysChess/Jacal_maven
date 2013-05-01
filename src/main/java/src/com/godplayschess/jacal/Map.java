@@ -12,36 +12,36 @@ public class Map {
     public final static int MAP_XSHIFT = 100;
     public final static int MAP_YSHIFT = 50;
 
-    private final int FOREST_AMOUNT = 10;
-    private final int CHEST1_AMOUNT = 10;
-    private final int CHEST2_AMOUNT = 10;
-    private final int CHEST3_AMOUNT = 10;
-    private final int CHEST4_AMOUNT = 10;
-    private final int CHEST5_AMOUNT = 10;
-    private final int CROCO_AMOUNT = 10;
-    private final int FORTS_AMOUNT = 10;
-    private final int FORTS_GIRL_AMOUNT = 10;
-    private final int HOLES_AMOUNT = 10;
-    private final int PLANES_AMOUNT = 10;
-    private final int HORSES_AMOUNT = 10;
+    private final int FOREST_AMOUNT = 40;
+    private final int CHEST1_AMOUNT = 5;
+    private final int CHEST2_AMOUNT = 5;
+    private final int CHEST3_AMOUNT = 3;
+    private final int CHEST4_AMOUNT = 2;
+    private final int CHEST5_AMOUNT = 1;
+    private final int CROCO_AMOUNT = 4;
+    private final int FORTS_AMOUNT = 2;
+    private final int FORTS_GIRL_AMOUNT = 1;
+    private final int HOLES_AMOUNT = 3;
+    private final int PLANES_AMOUNT = 1;
+    private final int HORSES_AMOUNT = 2;
 
-    private final int ARROW1_AMOUNT = 10;
-    private final int ARROW2_AMOUNT = 10;
-    private final int ARROW3_AMOUNT = 10;
-    private final int ARROW4_AMOUNT = 10;
+    private final int ARROW1_AMOUNT = 6;
+    private final int ARROW2_AMOUNT = 6;
+    private final int ARROW3_AMOUNT = 3;
+    private final int ARROW4_AMOUNT = 6;
 
-    private final int JUNGLES_AMOUNT = 10;
-    private final int DESERTS_AMOUNT = 10;
-    private final int SWAMP_AMOUNT = 10;
-    private final int WATERFALLS_AMOUNT = 10; // <---coins
+    private final int JUNGLES_AMOUNT = 4;
+    private final int DESERTS_AMOUNT = 3;
+    private final int SWAMP_AMOUNT = 2;
+    private final int WATERFALLS_AMOUNT = 1;
 
-    private final int X2_AMOUNT = 10;
-    private final int RHUM_AMOUNT = 10;
-    private final int PARACHUTE_AMOUNT = 10;
+    private final int X2_AMOUNT = 6;
+    private final int RHUM_AMOUNT = 4;
+    private final int PARACHUTE_AMOUNT = 2;
 
-    private final int CANNIBAL_AMOUNT = 10;
+    private final int CANNIBAL_AMOUNT = 1;
 
-    private final int CANNON_AMOUNT = 10;
+    private final int CANNON_AMOUNT = 2;
 
     private ArrayList<Integer> TerraIncoginta = new ArrayList<Integer>(NFIELDS * NFIELDS - 4 * (NFIELDS - 2));
 
@@ -149,9 +149,6 @@ public class Map {
         for (int i=0; i<HORSES_AMOUNT;i++){
             TerraIncoginta.add(Tile.HORSE);
         }
-
-
-
     }
 
     public void openTile(int x, int y) {
